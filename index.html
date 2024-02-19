@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2ada1279fbc10fa2bcb6e9989e13319d {
+                    position: relative;
+                    width: 1280.0px;
+                    height: 960.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    <h3 style="font-size:16px"><b>전국 대학 연관기관 위치</b></h3>
+    
+            <div class="folium-map" id="map_2ada1279fbc10fa2bcb6e9989e13319d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2ada1279fbc10fa2bcb6e9989e13319d = L.map(
+                "map_2ada1279fbc10fa2bcb6e9989e13319d",
+                {
+                    center: [36.6, 127.2],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0802095a348596d99edae5af165761c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b0802095a348596d99edae5af165761c.addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var marker_4feeeec7f27807010f65a810c60b2bd5 = L.marker(
+                [37.31396569, 127.0034517],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_a89842febaea120b87d0b5ed48cabb3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4feeeec7f27807010f65a810c60b2bd5.setIcon(icon_a89842febaea120b87d0b5ed48cabb3c);
+        
+    
+        var popup_6059fd51784e68edc1b4bac8c8b098cf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb1b609c4eac77253f50369ef90e77fc = $(`<div id="html_bb1b609c4eac77253f50369ef90e77fc" style="width: 100.0%; height: 100.0%;">경기도 수원시 장안구 서부로 2066 성균관대학교 자연과학캠퍼스</div>`)[0];
+                popup_6059fd51784e68edc1b4bac8c8b098cf.setContent(html_bb1b609c4eac77253f50369ef90e77fc);
+            
+        
+
+        marker_4feeeec7f27807010f65a810c60b2bd5.bindPopup(popup_6059fd51784e68edc1b4bac8c8b098cf)
+        ;
+
+        
+    
+    
+            marker_4feeeec7f27807010f65a810c60b2bd5.bindTooltip(
+                `<div>
+                     성균관대학교기숙사(유)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d29c621022b75d66d938c987bc386e3e = L.marker(
+                [37.50396465, 127.0007635],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_1d90de9612d4d1a04b48753ddb01527a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d29c621022b75d66d938c987bc386e3e.setIcon(icon_1d90de9612d4d1a04b48753ddb01527a);
+        
+    
+        var popup_e6bb4fdae9bd4b68b3b70c19da4b344b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2116aa7e23e11dddba54bf905b4bb532 = $(`<div id="html_2116aa7e23e11dddba54bf905b4bb532" style="width: 100.0%; height: 100.0%;">서울특별시 서초구 반포동505 성의교정내</div>`)[0];
+                popup_e6bb4fdae9bd4b68b3b70c19da4b344b.setContent(html_2116aa7e23e11dddba54bf905b4bb532);
+            
+        
+
+        marker_d29c621022b75d66d938c987bc386e3e.bindPopup(popup_e6bb4fdae9bd4b68b3b70c19da4b344b)
+        ;
+
+        
+    
+    
+            marker_d29c621022b75d66d938c987bc386e3e.bindTooltip(
+                `<div>
+                     가톨릭대학교산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5744c112e5088d109f9d3d482c2ac738 = L.marker(
+                [37.30128685, 127.0477029],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_94516f05cc59e652f61a0eaf21f99c4f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5744c112e5088d109f9d3d482c2ac738.setIcon(icon_94516f05cc59e652f61a0eaf21f99c4f);
+        
+    
+        var popup_76545d68018d78ccf5e44b2a41061b4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7478c74ba7606fc78ee375af4c7016f2 = $(`<div id="html_7478c74ba7606fc78ee375af4c7016f2" style="width: 100.0%; height: 100.0%;">경기도 수원시 영통구 광교산로 154-42 (이의동, 경기대학교) 산학협력단 202호</div>`)[0];
+                popup_76545d68018d78ccf5e44b2a41061b4e.setContent(html_7478c74ba7606fc78ee375af4c7016f2);
+            
+        
+
+        marker_5744c112e5088d109f9d3d482c2ac738.bindPopup(popup_76545d68018d78ccf5e44b2a41061b4e)
+        ;
+
+        
+    
+    
+            marker_5744c112e5088d109f9d3d482c2ac738.bindTooltip(
+                `<div>
+                     경기대학교 산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e6c25fbe7ad3ffd55da9f3d2b160bba = L.marker(
+                [37.58845682, 127.0283853],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_2d6c4cf0dedc6172a73472d212e2c444 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9e6c25fbe7ad3ffd55da9f3d2b160bba.setIcon(icon_2d6c4cf0dedc6172a73472d212e2c444);
+        
+    
+        var popup_4838cd9d621be08505c81abfdcbbf131 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f7ca6805b324a5426c6188c738eb6c5 = $(`<div id="html_7f7ca6805b324a5426c6188c738eb6c5" style="width: 100.0%; height: 100.0%;">서울특별시 성북구 안암로 145 (안암동5가, 고려대학교안암캠퍼스)</div>`)[0];
+                popup_4838cd9d621be08505c81abfdcbbf131.setContent(html_7f7ca6805b324a5426c6188c738eb6c5);
+            
+        
+
+        marker_9e6c25fbe7ad3ffd55da9f3d2b160bba.bindPopup(popup_4838cd9d621be08505c81abfdcbbf131)
+        ;
+
+        
+    
+    
+            marker_9e6c25fbe7ad3ffd55da9f3d2b160bba.bindTooltip(
+                `<div>
+                     고려대학교 기술지주(주)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04748e9a15896b15218ee472842f4b94 = L.marker(
+                [37.57870344, 126.9996944],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_916559abdbb34826a04043f9f7806691 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_04748e9a15896b15218ee472842f4b94.setIcon(icon_916559abdbb34826a04043f9f7806691);
+        
+    
+        var popup_a92683ccf2d26f45300acead06c91e9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_151ef82ceee3e20d39066d8b40ba5c9f = $(`<div id="html_151ef82ceee3e20d39066d8b40ba5c9f" style="width: 100.0%; height: 100.0%;">서울특별시 종로구 대학로 101 (연건동, 서울대학교병원)</div>`)[0];
+                popup_a92683ccf2d26f45300acead06c91e9b.setContent(html_151ef82ceee3e20d39066d8b40ba5c9f);
+            
+        
+
+        marker_04748e9a15896b15218ee472842f4b94.bindPopup(popup_a92683ccf2d26f45300acead06c91e9b)
+        ;
+
+        
+    
+    
+            marker_04748e9a15896b15218ee472842f4b94.bindTooltip(
+                `<div>
+                     서울대학교병원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ee000c7025d2b24e164a18d189eab13 = L.marker(
+                [37.46319952, 126.9358077],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_d41024fafb7a17e438389c41e124bd5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ee000c7025d2b24e164a18d189eab13.setIcon(icon_d41024fafb7a17e438389c41e124bd5c);
+        
+    
+        var popup_6e3bf28e832fe4706f47096a2ec3ae70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_765a39e25a97228d4681274580eac759 = $(`<div id="html_765a39e25a97228d4681274580eac759" style="width: 100.0%; height: 100.0%;">서울특별시 관악구 관악로 1 (신림동, 서울대학교)</div>`)[0];
+                popup_6e3bf28e832fe4706f47096a2ec3ae70.setContent(html_765a39e25a97228d4681274580eac759);
+            
+        
+
+        marker_1ee000c7025d2b24e164a18d189eab13.bindPopup(popup_6e3bf28e832fe4706f47096a2ec3ae70)
+        ;
+
+        
+    
+    
+            marker_1ee000c7025d2b24e164a18d189eab13.bindTooltip(
+                `<div>
+                     재단법인 서울대학교발전기금
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_182eb8b3d2de0fbb9536137a623c7c02 = L.marker(
+                [35.85979959, 129.1883322],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_a389710b0876dbf0c63571e2f767d663 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_182eb8b3d2de0fbb9536137a623c7c02.setIcon(icon_a389710b0876dbf0c63571e2f767d663);
+        
+    
+        var popup_4a41f91598cdd00a4810ec4e369230ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81cc7b03b488ad55e0998769ff4b6e20 = $(`<div id="html_81cc7b03b488ad55e0998769ff4b6e20" style="width: 100.0%; height: 100.0%;">경상북도 경주시 동대로 123 (석장동, 동국대학교경주캠퍼스) 산학협력관</div>`)[0];
+                popup_4a41f91598cdd00a4810ec4e369230ab.setContent(html_81cc7b03b488ad55e0998769ff4b6e20);
+            
+        
+
+        marker_182eb8b3d2de0fbb9536137a623c7c02.bindPopup(popup_4a41f91598cdd00a4810ec4e369230ab)
+        ;
+
+        
+    
+    
+            marker_182eb8b3d2de0fbb9536137a623c7c02.bindTooltip(
+                `<div>
+                     동국대학교경주캠퍼스산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d3d8773b7f54ee6fa2c192a44a91f89 = L.marker(
+                [37.55851624, 126.9970218],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_f6ba72973a22d50dea7ad448c36df984 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8d3d8773b7f54ee6fa2c192a44a91f89.setIcon(icon_f6ba72973a22d50dea7ad448c36df984);
+        
+    
+        var popup_e8a51ba3a0b4f72f500649ce51c2c73b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaa6708f45ab32c01693dc512561c966 = $(`<div id="html_eaa6708f45ab32c01693dc512561c966" style="width: 100.0%; height: 100.0%;">서울특별시 중구 필동로1길 30 (필동3가, 동국대학교) 본관2층 산학협력단</div>`)[0];
+                popup_e8a51ba3a0b4f72f500649ce51c2c73b.setContent(html_eaa6708f45ab32c01693dc512561c966);
+            
+        
+
+        marker_8d3d8773b7f54ee6fa2c192a44a91f89.bindPopup(popup_e8a51ba3a0b4f72f500649ce51c2c73b)
+        ;
+
+        
+    
+    
+            marker_8d3d8773b7f54ee6fa2c192a44a91f89.bindTooltip(
+                `<div>
+                     동국대학교산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cb2244e10a14c303031c803a8485329 = L.marker(
+                [37.23888808, 127.1395727],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_1767b109b5b4ab65c579a5c9a0831a00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1cb2244e10a14c303031c803a8485329.setIcon(icon_1767b109b5b4ab65c579a5c9a0831a00);
+        
+    
+        var popup_6be21824b79a6ac9e77156dd288be048 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f4670937d55efddd7f6eeff9a6cbe52 = $(`<div id="html_7f4670937d55efddd7f6eeff9a6cbe52" style="width: 100.0%; height: 100.0%;">경상북도 포항시 남구 청암로 77 (지곡동, 포항공과대학교)</div>`)[0];
+                popup_6be21824b79a6ac9e77156dd288be048.setContent(html_7f4670937d55efddd7f6eeff9a6cbe52);
+            
+        
+
+        marker_1cb2244e10a14c303031c803a8485329.bindPopup(popup_6be21824b79a6ac9e77156dd288be048)
+        ;
+
+        
+    
+    
+            marker_1cb2244e10a14c303031c803a8485329.bindTooltip(
+                `<div>
+                     학교법인 포항공과대학교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5eed07d1104c4767bde42055f3a0ebf2 = L.marker(
+                [37.5054929, 126.962337],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_a8f902618cad2ed4baba32d68519361c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5eed07d1104c4767bde42055f3a0ebf2.setIcon(icon_a8f902618cad2ed4baba32d68519361c);
+        
+    
+        var popup_d7811e15e91dac43e3f4e51c140bc48c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c9f981107bc8e70d24b02cb4bf75fdf = $(`<div id="html_9c9f981107bc8e70d24b02cb4bf75fdf" style="width: 100.0%; height: 100.0%;">서울특별시 동작구 흑석로 84 (흑석동, 중앙대학교)</div>`)[0];
+                popup_d7811e15e91dac43e3f4e51c140bc48c.setContent(html_9c9f981107bc8e70d24b02cb4bf75fdf);
+            
+        
+
+        marker_5eed07d1104c4767bde42055f3a0ebf2.bindPopup(popup_d7811e15e91dac43e3f4e51c140bc48c)
+        ;
+
+        
+    
+    
+            marker_5eed07d1104c4767bde42055f3a0ebf2.bindTooltip(
+                `<div>
+                     중앙대학교 산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_969dffa44733b812d6898338d6689024 = L.marker(
+                [35.50264769, 129.4155207],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_af45a47fb8f246fb2692c1502eff82ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_969dffa44733b812d6898338d6689024.setIcon(icon_af45a47fb8f246fb2692c1502eff82ed);
+        
+    
+        var popup_f3f1fc959655df98e457d9139d989604 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_341ec6198bc727897fa6e2971a980872 = $(`<div id="html_341ec6198bc727897fa6e2971a980872" style="width: 100.0%; height: 100.0%;">울산광역시 동구 봉수로 101 (화정동, 울산과학대학동부캠퍼스)</div>`)[0];
+                popup_f3f1fc959655df98e457d9139d989604.setContent(html_341ec6198bc727897fa6e2971a980872);
+            
+        
+
+        marker_969dffa44733b812d6898338d6689024.bindPopup(popup_f3f1fc959655df98e457d9139d989604)
+        ;
+
+        
+    
+    
+            marker_969dffa44733b812d6898338d6689024.bindTooltip(
+                `<div>
+                     울산과학대학교 산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_164839937d8d1485a3edb30fdeda6afd = L.marker(
+                [37.23888808, 127.1395727],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_d41a69f23104a48d5fdb262339b0b5ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_164839937d8d1485a3edb30fdeda6afd.setIcon(icon_d41a69f23104a48d5fdb262339b0b5ac);
+        
+    
+        var popup_a4b2b24f7609d8bfde2b970c6a5e01a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5c8f173e6cbbebb2ee944d502904ad5 = $(`<div id="html_c5c8f173e6cbbebb2ee944d502904ad5" style="width: 100.0%; height: 100.0%;">경상북도 포항시 남구 청암로 77 (지곡동, 포항공과대학교)</div>`)[0];
+                popup_a4b2b24f7609d8bfde2b970c6a5e01a4.setContent(html_c5c8f173e6cbbebb2ee944d502904ad5);
+            
+        
+
+        marker_164839937d8d1485a3edb30fdeda6afd.bindPopup(popup_a4b2b24f7609d8bfde2b970c6a5e01a4)
+        ;
+
+        
+    
+    
+            marker_164839937d8d1485a3edb30fdeda6afd.bindTooltip(
+                `<div>
+                     포항공과대학교 산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73c60b64a906d9faf1b670e5e6cf7d1f = L.marker(
+                [37.45170402, 126.6471036],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_715f321db1b9ba9187d4801702caa8f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_73c60b64a906d9faf1b670e5e6cf7d1f.setIcon(icon_715f321db1b9ba9187d4801702caa8f6);
+        
+    
+        var popup_8ee25f95c0ed2f95fead37123be51978 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93fbbabc101e068276f678a0f40cf926 = $(`<div id="html_93fbbabc101e068276f678a0f40cf926" style="width: 100.0%; height: 100.0%;">인천광역시 미추홀구 인하로 100 (용현동, 인하대,인하공전,정석항공고) 인하대학교 본관</div>`)[0];
+                popup_8ee25f95c0ed2f95fead37123be51978.setContent(html_93fbbabc101e068276f678a0f40cf926);
+            
+        
+
+        marker_73c60b64a906d9faf1b670e5e6cf7d1f.bindPopup(popup_8ee25f95c0ed2f95fead37123be51978)
+        ;
+
+        
+    
+    
+            marker_73c60b64a906d9faf1b670e5e6cf7d1f.bindTooltip(
+                `<div>
+                     인하대학교 산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bef9afe08cb82fafc7fd132ad300ced = L.marker(
+                [37.31396569, 127.0034517],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_eeb94c1aaeeb5fdf7d75d0bd7c14cc05 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2bef9afe08cb82fafc7fd132ad300ced.setIcon(icon_eeb94c1aaeeb5fdf7d75d0bd7c14cc05);
+        
+    
+        var popup_d2586e4799243d3bd3c9149fd06d2b27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0288683ca6e5cd9f258338504ed1bfbe = $(`<div id="html_0288683ca6e5cd9f258338504ed1bfbe" style="width: 100.0%; height: 100.0%;">경기도 수원시 장안구 서부로 2066 성균관대학교 산학협력단(제2공학관 27232호)</div>`)[0];
+                popup_d2586e4799243d3bd3c9149fd06d2b27.setContent(html_0288683ca6e5cd9f258338504ed1bfbe);
+            
+        
+
+        marker_2bef9afe08cb82fafc7fd132ad300ced.bindPopup(popup_d2586e4799243d3bd3c9149fd06d2b27)
+        ;
+
+        
+    
+    
+            marker_2bef9afe08cb82fafc7fd132ad300ced.bindTooltip(
+                `<div>
+                     성균관대학교산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_41a6ec85729e0fd7fe65928196252b93 = L.marker(
+                [37.5054929, 126.962337],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_3f5a9e6e40bfb92db8f00ba7973b7d26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_41a6ec85729e0fd7fe65928196252b93.setIcon(icon_3f5a9e6e40bfb92db8f00ba7973b7d26);
+        
+    
+        var popup_a967e4ebb4510d5a3b8a2df62107887e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67e146a2c9f25694a526df755af7e957 = $(`<div id="html_67e146a2c9f25694a526df755af7e957" style="width: 100.0%; height: 100.0%;">서울특별시 동작구 흑석로 84 (흑석동, 중앙대학교)</div>`)[0];
+                popup_a967e4ebb4510d5a3b8a2df62107887e.setContent(html_67e146a2c9f25694a526df755af7e957);
+            
+        
+
+        marker_41a6ec85729e0fd7fe65928196252b93.bindPopup(popup_a967e4ebb4510d5a3b8a2df62107887e)
+        ;
+
+        
+    
+    
+            marker_41a6ec85729e0fd7fe65928196252b93.bindTooltip(
+                `<div>
+                     학교법인 중앙대학교
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_33349cf266957477e5bf7801a734e61f = L.marker(
+                [35.54498363, 129.2635596],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_2cec1e4460b90a323316ace96e0abaaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_33349cf266957477e5bf7801a734e61f.setIcon(icon_2cec1e4460b90a323316ace96e0abaaf);
+        
+    
+        var popup_ad416208d2a890f9c62365b094a0b0fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc7d793991895c1be218fa085fc42358 = $(`<div id="html_cc7d793991895c1be218fa085fc42358" style="width: 100.0%; height: 100.0%;">울산광역시 남구 대학로 93 5호관 302호(무거동, 울산대학교)</div>`)[0];
+                popup_ad416208d2a890f9c62365b094a0b0fb.setContent(html_cc7d793991895c1be218fa085fc42358);
+            
+        
+
+        marker_33349cf266957477e5bf7801a734e61f.bindPopup(popup_ad416208d2a890f9c62365b094a0b0fb)
+        ;
+
+        
+    
+    
+            marker_33349cf266957477e5bf7801a734e61f.bindTooltip(
+                `<div>
+                     울산대학교기술지주 주식회사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_60bece252db11882af2731b5c5285512 = L.marker(
+                [37.60674713, 126.8722465],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_2c6ae36e391e087dfeb144ba0b0c1f39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_60bece252db11882af2731b5c5285512.setIcon(icon_2c6ae36e391e087dfeb144ba0b0c1f39);
+        
+    
+        var popup_c319c4158b85d4ec97f970c24dcc0139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0632ddef8c6bd15a1f1fe4d953e12862 = $(`<div id="html_0632ddef8c6bd15a1f1fe4d953e12862" style="width: 100.0%; height: 100.0%;">경기도 고양시 덕양구 항공대학로 76 (화전동, 한국항공대학교) 산학협력단</div>`)[0];
+                popup_c319c4158b85d4ec97f970c24dcc0139.setContent(html_0632ddef8c6bd15a1f1fe4d953e12862);
+            
+        
+
+        marker_60bece252db11882af2731b5c5285512.bindPopup(popup_c319c4158b85d4ec97f970c24dcc0139)
+        ;
+
+        
+    
+    
+            marker_60bece252db11882af2731b5c5285512.bindTooltip(
+                `<div>
+                     한국항공대학교 산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_38041def3d9980b3223e76b6e832b98e = L.marker(
+                [37.47329547, 127.0312203],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_3dba510e526571d9f9716cf85e96a932 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_38041def3d9980b3223e76b6e832b98e.setIcon(icon_3dba510e526571d9f9716cf85e96a932);
+        
+    
+        var popup_b05c31315260df79877ba458014262f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3666a73c252c0a38c5e317324045a97b = $(`<div id="html_3666a73c252c0a38c5e317324045a97b" style="width: 100.0%; height: 100.0%;">서울특별시 서초구 반포대로 222 가톨릭대학교 의생명산업연구원 1007호</div>`)[0];
+                popup_b05c31315260df79877ba458014262f3.setContent(html_3666a73c252c0a38c5e317324045a97b);
+            
+        
+
+        marker_38041def3d9980b3223e76b6e832b98e.bindPopup(popup_b05c31315260df79877ba458014262f3)
+        ;
+
+        
+    
+    
+            marker_38041def3d9980b3223e76b6e832b98e.bindTooltip(
+                `<div>
+                     가톨릭대학교기술지주 주식회사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75754812b2c3217030512777b4576b9d = L.marker(
+                [37.23888808, 127.1395727],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_f8052b7566284c9536d9e6c563d95297 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75754812b2c3217030512777b4576b9d.setIcon(icon_f8052b7566284c9536d9e6c563d95297);
+        
+    
+        var popup_bbb91ad884f78bd9da10ead2c83cc3c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fcfb197ab277487517529e50ebb75a8 = $(`<div id="html_9fcfb197ab277487517529e50ebb75a8" style="width: 100.0%; height: 100.0%;">경상북도 포항시 남구 청암로 77 (지곡동, 포항공과대학교), 208호</div>`)[0];
+                popup_bbb91ad884f78bd9da10ead2c83cc3c3.setContent(html_9fcfb197ab277487517529e50ebb75a8);
+            
+        
+
+        marker_75754812b2c3217030512777b4576b9d.bindPopup(popup_bbb91ad884f78bd9da10ead2c83cc3c3)
+        ;
+
+        
+    
+    
+            marker_75754812b2c3217030512777b4576b9d.bindTooltip(
+                `<div>
+                     포항공과대학교기술지주 주식회사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5be6f359f7b0e6d9b7b7822453307adb = L.marker(
+                [37.27773139, 127.6326308],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_c54a4810775c7a947601567822e7c785 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5be6f359f7b0e6d9b7b7822453307adb.setIcon(icon_c54a4810775c7a947601567822e7c785);
+        
+    
+        var popup_4725e1dc83afe78abb7ba967f502f49d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d96d5d7e7d3b6558b32f0155ef4f68ba = $(`<div id="html_d96d5d7e7d3b6558b32f0155ef4f68ba" style="width: 100.0%; height: 100.0%;">경기도 여주시 세종로 338 (교동, 여주대학)</div>`)[0];
+                popup_4725e1dc83afe78abb7ba967f502f49d.setContent(html_d96d5d7e7d3b6558b32f0155ef4f68ba);
+            
+        
+
+        marker_5be6f359f7b0e6d9b7b7822453307adb.bindPopup(popup_4725e1dc83afe78abb7ba967f502f49d)
+        ;
+
+        
+    
+    
+            marker_5be6f359f7b0e6d9b7b7822453307adb.bindTooltip(
+                `<div>
+                     여주대학교 산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_205b0107f0a7da095e193f7713a3421b = L.marker(
+                [37.38559014, 126.6389612],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_2e21abfbf93883e4ac71653648ca8d8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_205b0107f0a7da095e193f7713a3421b.setIcon(icon_2e21abfbf93883e4ac71653648ca8d8f);
+        
+    
+        var popup_5dc974588c124d79d407983f4213d31f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80c3a504fed12a6b46c2676785b7480b = $(`<div id="html_80c3a504fed12a6b46c2676785b7480b" style="width: 100.0%; height: 100.0%;">인천광역시 연수구 송도과학로 85 (송도동, 연세대학교국제캠퍼스)</div>`)[0];
+                popup_5dc974588c124d79d407983f4213d31f.setContent(html_80c3a504fed12a6b46c2676785b7480b);
+            
+        
+
+        marker_205b0107f0a7da095e193f7713a3421b.bindPopup(popup_5dc974588c124d79d407983f4213d31f)
+        ;
+
+        
+    
+    
+            marker_205b0107f0a7da095e193f7713a3421b.bindTooltip(
+                `<div>
+                     연세대학교송도캠퍼스제이기숙사 (주)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a99770cdcbef1e11a2f6ad52592b09e = L.marker(
+                [35.18353616, 128.0874507],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_2c9cdc6c8081e8abb4e1f6b557900482 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7a99770cdcbef1e11a2f6ad52592b09e.setIcon(icon_2c9cdc6c8081e8abb4e1f6b557900482);
+        
+    
+        var popup_b248a972bbc1b4496f183635ac315c25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c8163d529817a4c32499817de310c2b = $(`<div id="html_7c8163d529817a4c32499817de310c2b" style="width: 100.0%; height: 100.0%;">경상남도 진주시 진주대로 897 (강남동, 대경빌딩) 12층</div>`)[0];
+                popup_b248a972bbc1b4496f183635ac315c25.setContent(html_7c8163d529817a4c32499817de310c2b);
+            
+        
+
+        marker_7a99770cdcbef1e11a2f6ad52592b09e.bindPopup(popup_b248a972bbc1b4496f183635ac315c25)
+        ;
+
+        
+    
+    
+            marker_7a99770cdcbef1e11a2f6ad52592b09e.bindTooltip(
+                `<div>
+                     경남지역대학교생활관건설(주)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_320341b411330b720cb99a5d6512bac6 = L.marker(
+                [37.3964472, 126.6488346],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_143000f451e28d957615696aa4b93581 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_320341b411330b720cb99a5d6512bac6.setIcon(icon_143000f451e28d957615696aa4b93581);
+        
+    
+        var popup_be3a7b87075ef74be8fb646d99030bca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e31a7e939b7fc626c18c99a3f6da2b6f = $(`<div id="html_e31a7e939b7fc626c18c99a3f6da2b6f" style="width: 100.0%; height: 100.0%;">인천광역시 연수구 송도과학로 85</div>`)[0];
+                popup_be3a7b87075ef74be8fb646d99030bca.setContent(html_e31a7e939b7fc626c18c99a3f6da2b6f);
+            
+        
+
+        marker_320341b411330b720cb99a5d6512bac6.bindPopup(popup_be3a7b87075ef74be8fb646d99030bca)
+        ;
+
+        
+    
+    
+            marker_320341b411330b720cb99a5d6512bac6.bindTooltip(
+                `<div>
+                     연세대학교기술지주 주식회사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b003d8f8467f41d78ecc21610d5cde0d = L.marker(
+                [35.23468627, 128.6580331],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_e10e4161cc5cb07d8b460ee307875dce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b003d8f8467f41d78ecc21610d5cde0d.setIcon(icon_e10e4161cc5cb07d8b460ee307875dce);
+        
+    
+        var popup_6718b1e1cebbd1ee57d057d780611988 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fd2cab1eea69a939a3316c264982ddb = $(`<div id="html_0fd2cab1eea69a939a3316c264982ddb" style="width: 100.0%; height: 100.0%;">경상남도 창원시 성산구 충혼로 91 (두대동, 창원문성대학)</div>`)[0];
+                popup_6718b1e1cebbd1ee57d057d780611988.setContent(html_0fd2cab1eea69a939a3316c264982ddb);
+            
+        
+
+        marker_b003d8f8467f41d78ecc21610d5cde0d.bindPopup(popup_6718b1e1cebbd1ee57d057d780611988)
+        ;
+
+        
+    
+    
+            marker_b003d8f8467f41d78ecc21610d5cde0d.bindTooltip(
+                `<div>
+                     창원문성대학교산학협력단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a57bf6f332fff4636d7bd5d474a435f = L.marker(
+                [37.29634971, 126.9777267],
+                {}
+            ).addTo(map_2ada1279fbc10fa2bcb6e9989e13319d);
+        
+    
+            var icon_31e4170447270d078cd5915b44048e6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a57bf6f332fff4636d7bd5d474a435f.setIcon(icon_31e4170447270d078cd5915b44048e6c);
+        
+    
+        var popup_a07ec3886c744393600917b51cb70ecb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52aba24aff041c2524568ca6d939b41e = $(`<div id="html_52aba24aff041c2524568ca6d939b41e" style="width: 100.0%; height: 100.0%;">경기도 수원시 장안구 서부로 2066 85261호 (천천동, 성균관대학교 자연과학캠퍼스 산학협력센터)</div>`)[0];
+                popup_a07ec3886c744393600917b51cb70ecb.setContent(html_52aba24aff041c2524568ca6d939b41e);
+            
+        
+
+        marker_0a57bf6f332fff4636d7bd5d474a435f.bindPopup(popup_a07ec3886c744393600917b51cb70ecb)
+        ;
+
+        
+    
+    
+            marker_0a57bf6f332fff4636d7bd5d474a435f.bindTooltip(
+                `<div>
+                     성균관대학교기술지주 주식회사
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
